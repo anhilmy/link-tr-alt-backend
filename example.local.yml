@@ -1,0 +1,2 @@
+dsn: "postgresql://postgres:admin123@host.docker.internal:5432/link_tr_alt"
+db_track_modification: False
