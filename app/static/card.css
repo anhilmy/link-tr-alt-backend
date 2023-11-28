@@ -1,0 +1,19 @@
+
+.card-layout {
+    margin-bottom: 16px;
+    --padding-y: 0.1em;
+    border-radius: 14px;
+    width: 40vw;
+    min-width: 450px;
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
+    background-color: rgb(252, 208, 154);
+}
+
+.card-layout .title {
+    text-align: center;
+}
+
+.title {
+    font-size: 1em;
+}

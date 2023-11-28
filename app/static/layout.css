@@ -1,0 +1,36 @@
+.container {
+    margin: auto;
+}
+
+.content {
+    margin: 5px;
+    margin-top: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav {
+    --margin-x: 1vw;
+    --padding-y: 3vw;
+
+    margin-top: var(--margin-x);
+    margin-bottom: var(--margin-x);
+    padding-left: var(--padding-y);
+    padding-right: var(--padding-y);
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-login {
+    float: right;
+}
+
+.title a {
+    text-decoration: none;
+    color: inherit;
+}
