@@ -1,13 +1,22 @@
 
 .card-layout {
-    margin-bottom: 16px;
     --padding-y: 0.1em;
-    border-radius: 14px;
     width: 40vw;
     min-width: 450px;
     padding-top: var(--padding-y);
     padding-bottom: var(--padding-y);
+    margin-bottom: 16px;
+}
+
+.list-link {
     background-color: rgb(252, 208, 154);
+    border-radius: 14px;
+}
+
+.new-link {
+    background-color: rgb(112, 112, 161);
+    border-radius: 25px;
+    color:aliceblue;
 }
 
 .card-layout .title {

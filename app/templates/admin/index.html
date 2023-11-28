@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Homepage |
+{% if user is defined %}
+{{ user.username }}
+{% else %}
+Anonymous
+{% endif %}
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='card.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    {% for display in list %}
+    <div class="card-layout list-link">
+        <p class="title">
+            <b>
+                <a href="{{display.link}}">
+                    {{ display.display_name }}
+                </a>
+            </b>
+        </p>
+    </div>
+    {% endfor %}
+
+    <hr>
+    <a href="#">
+        <div class="card-layout new-link">
+            <p class="title">
+                <b>
+                    <i class="fa-solid fa-plus"></i> &nbsp;
+                    Add new link
+                    &nbsp;&nbsp;
+                </b>
+            </p>
+        </div>
+    </a>
+</div>
+{% endblock %}
