@@ -1,6 +1,7 @@
 from flask import Flask
 from config import Config
 from app.extensions import db
+from flask_migrate import Migrate
 
 
 def create_app(config_class=Config):
@@ -9,6 +10,8 @@ def create_app(config_class=Config):
 
     # extension
     db.init_app(app)
+    migrate = Migrate(app, db)
+    from app import models
 
     # blueprints
     from app.main import bp as main_bp
